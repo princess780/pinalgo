@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Option 1: Include in HTML -->
+    <link rel="icon" href="./img/logo (2).png" type="./img">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <title>Forex Bootcamp</title>
+
+
+
+   
+    <style>
+
+      .nav-content{
+          margin-right:300px;
+          display: flex;
+          align-items: left;
+          justify-content:space-around;
+
+      }
+
+      .nav-content:hover{
+          color:orangered;
+      }
+      @media screen and (max-width:860px) {
+      .nav-content{
+          
+          display:block;
+          align-items: center;
+          justify-content:space-around;
+          margin-left:250px;
+          font-size:20px;
+      
+      }
+      .but{
+            margin-left: 20px;
+        }
+        .butt{
+            margin-left: 60px;
+        }
+      .nav-content  a:hover{
+          color:orangered;
+      }
+
+}
+  </style>
+</head>
+
+
+
+<body>
+  <a name="top"></a>
+  <div class="bg bg-image">
+      
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-black navbar-dark d-flex justify-content-center text-center  fixed-top" height="100px ">
+          <div class="container">
+              <a href="" class="navbar-brand"><img src="img/logo (2).png" height="50px" 
+                  width="100px"></a>
+
+              <button class="navbar-toggler type=" button data-bs-toggle="collapse" data-bs-target="#navmenu">
+                  <span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navmenu" >
+                  
+                  <ul class="navbar-nav ms-auto" id="navbar-nav"  >
+                    
+                  <div class="nav-content" >
+                      <li class=" navbar-item">
+                          <a  href="index.html" class="nav-link text-light">About Us</a></li>  
+                      <li class="navbar-item">
+                        <a  href="#instructors" class="nav-link text-light">Academy</a></li>
+                      <li class=" navbar-item">
+                         <a  href="#contact" class="nav-link text-light">Contact Us</a></li>
+                 </div>       
+
+                 <div class="but">
+                     <li class=" navbar-item">
+                          <a href="#instructors" class="nav-link">
+                             <button class="btn btn-primary btn-outline-transparent" data-bs-toggle="modal" 
+                                data-bs-target="#enroll">Login
+                             </button>
+                          </a></li>
+                 </div>
+                 <div class="butt">        
+                     <li class=" navbar-item">
+                          <a href="registration.html" class="nav-link">
+                           <button type="button" class="btn btn-primary" >Get Started</button>
+                          </a></li>
+                 </div>
+                  </ul>
+              </div>
+          </div>
+
+      </nav>
+        <!--SHowcase-->
+        <section class="bg-transparent text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <br>
+                        <h1 class="mx-5">Choose <span class="text-warning">Your Subscription</span> </h1>
+                        <p class="lead mx-5">
+                          Unlock the full potential of our trading bot with our flexible subscription plans. Whether you're a beginner looking to dip your toes into trading or an experienced trader seeking advanced features, we have a plan tailored to your needs.
+
+                          Explore our subscription options, pricing, and features to find the perfect fit for your trading journey.
+                        </p>
+                        <!-- <button class="btn btn-primary btn-outline-transparent btn-lg" data-bs-toggle="modal" data-bs-target="#enroll"> Start Learning</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-4 ">
+            <div class="row row-cols-1 row-cols-md-3 g-4 container mx-2 jusitify-contnent-center d-flex ">
+                <div class="col">
+                <div class="card h-100 hover-effect-card">
+                    <img src="img/coin 6.jpg" class="card-img-top" alt="Skyscrapers"/>
+                    <div class="card-body bg-light">
+                        <div class="card-header bg-light">
+                        <h1> 3-Months Plan
+                        </div></h1>
+                        <h5 class="card-title">$<span id="threeMonthsAmount">100.00</span></h5>
+                        <p class="card-text">Get started with our 3-months plan and enjoy enhanced trading tools.</p>
+
+                        <button class="btn btn-primary btn-outline-transparent btn-sm" data-bs-toggle="modal" > <a  href="payment.html" class="nav-link text-light">INVEST</a></button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted text-white btn btn-primary"><h2 class="text-light">BASIC   >>></h2></small>
+                    </div>  
+                </div>
+                </div>
+                <div class="col">
+                <div class="card h-100 hover-effect-card">
+                    <img src="img/fee.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                    <div class="card-body bg-light">
+                        <div class="card-header bg-light">
+                            <h1> 6-Months Plan
+                        </div></h1>
+                        <h5 class="card-title">$<span id="sixMonthsAmount">190.00</span></h5>
+                    <p class="card-text">Upgrade to our 6-months plan for even better trading benefits.</p>
+                    <button class="btn btn-primary btn-outline-transparent btn-sm" data-bs-toggle="modal" > <a  href="payment.html" class="nav-link text-light">INVEST</a></button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted text-white btn btn-primary"><h2 class="text-light">PREMIUM   >>></h2></small>
+                    </div>  
+                </div>
+                </div>
+                <div class="col">
+                <div class="card h-100 hover-effect-card">
+                    <img src="img/coin 3.jpg" class="card-img-top" alt="Palm Springs Road"/>
+                    <div class="card-body bg-light">
+                        <div class="card-header bg-light">
+                            <h1> 1-Year Plan
+                        </div></h1>
+                        <h5 class="card-title">$<span id="oneYearAmount">370.00</span></h5>
+                        <p class="card-text">Maximize your trading prowess with our exclusive 1-year plan.</p>
+                        <button class="btn btn-primary btn-outline-transparent btn-sm" data-bs-toggle="modal" > <a  href="payment.html" class="nav-link text-light">INVEST</a></button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted text-white btn btn-primary bg-info"><h2 class="text-light">VIP   >>></h2></small>
+                    </div>  
+                </div>
+                </div>
+
+
+                
+            </div>
+        </section>
+        <div class="modal fade bg-dark hidden-section" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-white bg-dark">
+                <h5 class="modal-title text-light" id="exampleModalLabel">Login</h5>
+                <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-white bg-dark">
+                <form id="modal"class="bg-dark text-light" action="">
+                    <div class="mb-3 form-group">
+                        <label for="first-name" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control bg-dark text-light" id="first-name" placeholder="Email" required/>
+                    </div>
+                    <div class="mb-3 form-group">
+                      <label for="last-name" class="col-form-label">PassWord</label>
+                      <input type="password" class="form-control bg-dark text-light" id="last-name" placeholder="Password" required/>
+                  </div>
+                </form>  
+                  <div class="text-center mb-3">
+                     <p>Or login with:</p>
+                     <a href="#instructors"><i class="bi bi-instagram m-3"></i></a>
+                     <a href="#instructors"><i class="bi bi-twitter m-3"></i></a>
+                     <a href="#instructors"><i class="bi bi-google m-3"></i></a>
+                     <a href="#instructors"><i class="bi bi-facebook m-3"></i></a>
+                     <a href="#instructors"><i class="bi bi-github"></i></a>
+                  </div> 
+                  <div class="text-center">
+                      <p>Don't have an account?<a href="registration.html"class="nav-link">
+                          <button type="button" class="btn btn-primary" >Get Started</button></a>
+                      </p>    
+                  </div>  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-outline-transparent" data-bs-toggle="modal" data-bs-target="#enroll">Submit</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <a name="instructors"></a>
+        <!--Instructors-->
+        <section id="academy" class="container">
+          <h1 class="text-center text-warning">Academy</h1>
+          <ul>
+              <li class="text-light lead">Learn and Grow</li>
+              <li class="text-light lead">Educational Resources</li>
+              <li class="text-light lead">Trading Tips and Strategies</li>
+          </ul>
+          <h1 class="text-center text-warning">WATCH SOME OF OUR VIDEOS TO GET MORE INSIGHT</h1>
+          <!-- Videos -->
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                      <iframe
+                        src="https://www.youtube.com/embed/eLYlX__5gLM?si=qnGf9pqmUBLpoC26" 
+                        type="video/mp4" controls width="100%" height="315">
+                      </iframe>
+                      <p class="text-light">All our traders have the access to the best available trading 
+                      solutions.</p>
+                  </div>
+                  <div class="col-md-3">
+                      <iframe
+                        src="https://www.youtube.com/embed/ID2ARm36KEE?si=mZsHiJ0jViOrOSEj" 
+                        type="video/mp4" controls width="100%" height="315">
+                      </iframe>
+                      <p class="text-light">How To Start DAY TRADING - Becoming A Crypto Trader IN 30 
+                      DAYS.</p>
+                  </div>
+                  <br>
+                  <div class="col-md-3 mb-4">
+                      <iframe
+                           src="https://www.youtube.com/embed/VI-rzf3nfJc?si=JcxbF07MeNzZVk8o" type="video/mp4" controls width="100%" height="315"></iframe>
+                      <p class="text-light">The Only Trading Strategy I Would Use If I Could Start Over </p>
+                  </div>
+                  <div class="col-md-3">
+                          <iframe
+                           src="https://www.youtube.com/embed/eynxyoKgpng?si=3zbW-JOrNSnZYGAH" type="video/mp4" width="100%" height="315"></iframe>
+                           <p class="text-light">The Only Technical Analysis Video You Will Ever Need. </p>     
+                  </div>
+              </div>
+          </div>
+      </section>
+  </section>
+
+  <a name="contact"></a>
+  <!--Contact & Map Section-->
+  <section class="p-5">
+      <div class="container bg-dark text-light">
+          <div class="row g-4">
+              <div class="col-md">
+                  <h2 class=" lead text-center justify-content-center align-items-center">Have questions or need assistance? We're here to help. Reach out to our dedicated support team anytime. We value your feedback and are eager to assist you in any way we can.
+                  </h2>
+                  <h2 class="text-center mb-4 text-warning">Contact Info</h2>
+                  <ul class="list-group lis-group lead px-4">
+                      <li class="list-group-ityem">
+                          <span class="fw-bol">Main Location:</span> 70 Zingisa Street Alakaiha, Port-Harcourt
+                      </li>
+                      <li class="list-group-ityem">
+                          <span class="fw-bol">Phone Number:</span>+234-8036018329
+                      </li>
+                      <li class="list-group-ityem">
+                          <span class="fw-bol">Enrollment Email:</span> pinnalgo@gmail.com
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md ">
+                  <div id='map' style='width: 400px; height: 300px;'></div>
+                  <script>
+                      mapboxgl.accessToken =
+                          'pk.eyJ1IjoibWlhdGVuIiwiYSI6ImNsMWowMGU1ZDB0NDEzY24yM3JhcmF6eHcifQ.tqeALGHHkCEq_5xDwHiOeg';
+                      var map = new mapboxgl.Map({
+                          container: 'map',
+                          style: 'mapbox://styles/mapbox/streets-v11'
+                      });
+                  </script>
+                  <script src="https://unpkg.com/scrollreveal"></script>
+                  <script src="scrow.js"></script>
+
+              </div>
+
+          </div>
+      </div>
+  </section>
+</div>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center  p-4 ">
+      <!-- Left -->
+      <div class="me-5 ">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Right -->
+
+      <div class="">
+        <a href="#instructors"><i class="bi bi-instagram m-3"></i></a>
+        <a href="#instructors"><i class="bi bi-twitter m-3"></i></a>
+        <a href="#instructors"><i class="bi bi-google m-3"></i></a>
+        <a href="#instructors"><i class="bi bi-facebook m-3"></i></a>
+        <a href="#instructors"><i class="bi bi-github"></i></a>
+      </div>
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="bg-black">
+      <div class="container text-center  mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-dark"></i>PinnalgoCapital
+            </h6>
+            <p>
+              Join our community of successful traders and start making smarter investment decisions.
+            </p>
+          </div>
+          
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-5">
+            <!-- Links -->
+            <h2 class="text-uppercase fw-bold btn-transparent ">
+              Subscribe Now
+            </h2>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>70 Zingisa Street Alakaiha, Port-Harcourt</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              pinnalgo@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i>+234-8036018329</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- Arrow footer -->
+  </footer>
+<footer class="p-5 bg-dark text-white text-center">
+  <div class="container">
+      <a href="#top" class="p-5 ">
+          <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+      <p class="lead">Copyright &copy; 2023 PinnalgoCapital </p>
+
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+input[type=text]{
+    background:transparent;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom:3px solid orangered;
+    margin:30px 0;
+    color:white;
+    width:500px;
+        
+}
+select{
+    background:transparent;
+    outline:none;
+    border:none;
+}
+select:option{
+    background:transparent;
+    outline:none;
+    border:none;
+}
+#col-input{
+    display: flex;
+    width:300px;
+}
+
+@media screen and (max-width:860px) {
+    .form-row{
+        padding:20px 50px;;
+    }
+   #cardForm button{
+        width:100%;
+        margin:30px 0;
+    }
+    input[type=text]{
+    width:100%;
+    }
+      
+}
+
+</style>
+
+</head>
+
+
+
+<body style="background:rgb(34, 33, 33); color:white;">
+
+    
+
+<div class="container mt-5" style="">
+    <h3>CHOOSE YOUR PREFERED PAYMENT METHOD</h3>
+
+    <div class="alert alert-danger" role="alert">
+        <b>NOTE: </b> Send a <b>Proof of Payment</b > on Telegram to <b>08036018329</b> or to any of our social media platforms
+
+    </div>
+
+    <label for="pay">Mode of payment</label>
+    <!-- USDT Wallet -->
+    
+    <div class="form-group">
+        <input type="radio" name="pay" id="">
+        <label for="usdtWallet" style="font-size:30px;">   USDT Wallet Address:</label>
+
+        <div class="alert alert-primary" role="alert">
+            USDT PAYMENT: 
+            
+            <ol>
+                <li>TRC20 Network USDT: <a href="#" class="alert-link"> 0x50e91c4964e3eca106386e911b69bca1628a256b </a>.   </li>
+                <li>BEP20 Network USDT:   <a href="#" class="alert-link"> TAtWy44hFvWjBB5y2uLhZAxpWzmMYXUvtx </a>.  </li>
+            </ol>
+            pay to any of this  address provided above, after payment upload screenshot of payment.
+            <hr>
+            <label for="select">select amount to pay</label>
+            <select name="select">
+                
+                <option>$100</option>
+                <option>$190</option>
+                <option>$370</option>
+            </select>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="handlePayment()">pay</button>
+        </div>
+        
+
+
+
+        <input type="text" class="form-control" id="usdtWallet" placeholder="Enter your payment id">
+
+        <br>
+        <label for="proof">upload PROOF OF PAYMENT</label>
+        <br>
+        <input type="file" name="proof" id="">
+
+        <!-- Submit Button -->
+    <button type="button" class="btn btn-primary" onclick="handlePayment()">UPLOAD</button>
+    </div>
+    <br><br>
+<hr style="background-color:white;">
+<br><br><br>
+
+    <!-- Card Payment -->
+
+
+    
+        <form action="" id="cardForm">
+    
+        <input type="radio" name="pay" id="cardForm">
+        <label style="font-size:30px;"> Card Payment:</label>
+        <input type="text" class="form-control mb-2" placeholder="Card Number" id="cardNumber" required>
+        <div class="form-row" id="col-input">
+            <div class="col" id="">
+                <input type="text" class="form-control" placeholder="MM/YY" id="expiryDate" required style="width:80px; text-align: center;" id="context">
+            </div>
+            <div class="col" >
+                <input type="text" class="form-control" placeholder="CVV" id="cvc" required style="width:80px; text-align: center;">
+            </div>
+        </div>
+        <small class="form-text text-muted">We accept the following: <img class="img-fluid" src="https://img.icons8.com/color/48/000000/visa.png" /> <img class="img-fluid" src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />  <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Verve_Image.png" width="60px" height="60px"/> </small>
+        <button type="submit" class="btn btn-primary" >Pay</button>
+
+
+        <div id="error-message"></div>
+        <div id="card-type"></div>
+    
+    </form>
+    
+        <br><br>
+        <hr style="background-color:white;">
+        <br><br><br>
+
+        <!-- Bank Account Payment -->
+
+        <input type="radio" name="pay" id="">
+        <label style="font-size:30px;">Bank Account Payment:</label>
+        <br>
+        <div class="alert alert-primary" role="alert">
+
+
+            ACCOUNT NAME: XXXXXXX
+            <br>
+            ACCOUNT NUMBER: XXXXXXXX
+            <br>
+            BANK NAME: XXXXXXXXXX
+            <hr>
+            
+            <b>NOTE: </b> Send a <b>Proof of Payment</b > on Telegram to <b>08036018329</b> or to any of our social media platforms
+ 
+        </div>
+       
+        
+
+        
+    </div>
+
+    
+    <div class="form-group" >
+        
+    </div>
+
+    
+    <div class="form-group">
+        
+    </div>
+
+    <!-- Submit Button -->
+    
+
+</div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-black text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center  p-4 ">
+          <!-- Left -->
+          <div class="me-5 ">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Right -->
+    
+          <div class="">
+            <a href="#instructors"><i class="bi bi-instagram m-3"></i></a>
+            <a href="#instructors"><i class="bi bi-twitter m-3"></i></a>
+            <a href="#instructors"><i class="bi bi-google m-3"></i></a>
+            <a href="#instructors"><i class="bi bi-facebook m-3"></i></a>
+            <a href="#instructors"><i class="bi bi-github"></i></a>
+          </div>
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="bg-black">
+          <div class="container text-center  mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3 text-dark"></i>PinnalgoCapital
+                </h6>
+                <p>
+                  Join our community of successful traders and start making smarter investment decisions.
+                </p>
+              </div>
+              
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-5">
+                <!-- Links -->
+                <h2 class="text-uppercase fw-bold btn-transparent ">
+                  Subscribe Now
+                </h2>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary">Head Office:</i>  PinnAlgo Secretariat 
+                    Odums 
+                    Port Harcourt</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  pinnalgo@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i>(+234)8036018329</p>
+                <p><i class="fas fa-telegram me-3 text-secondary">Telegram:</i>SR_Trades</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+       <!-- Arrow footer -->
+      </footer>
+    <footer class="p-5 bg-dark text-white text-center">
+      <div class="container">
+          <a href="#top" class="p-5 ">
+              <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+          <p class="lead">Copyright &copy; 2023 PinnalgoCapital </p>
+    
+      </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script>
+    function handlePayment() {
+        // Pseudocode for handling the payment based on chosen method
+
+        let usdtWalletAddress = document.getElementById('usdtWallet').value;
+
+        if (usdtWalletAddress) {
+            // Use USDT API to handle payment
+        } else {
+            // Check Card Details and use Card Payment API (e.g., Stripe)
+            // OR
+            // Check Bank Details and use appropriate Bank API
+        }
+
+        // Finally, redirect user or give feedback about the transaction
+    }
+
+    
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:768px){
+    .news-input{
+        width:50%;
+    }
+}
+ 
+
+
+body, html {
+    height: 100%;
+    background-color: transparent;
+    
+  }
+  
+  .bg{
+    background: url(img/background.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  .subscription-container {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-image {
+    max-width: 200px; /* adjust as needed */
+    margin-right: 20px;
+}
+
+form {
+    flex: 2;
+}
+.navbar .nav-link {
+    transition: color 0.3s ease;  
+}
+
+.navbar .nav-link:hover {
+    color: #c4c707;  
+}
+
+
+.navbar .btn {
+    transition: background-color 0.3s ease, border-color 0.3s ease;  
+}
+
+.navbar .btn:hover {
+    background-color: orangered; 
+    border-color: #b38600;
+}
+
+ 
+
+  .card {
+    opacity: .7;
+    background-color: rgba(23, 22, 41) !important;
+  }
+
+  .btn{
+      opacity: .7;
+      background-color: rgba(23, 22, 41) !important;
+  }
+
+#emailButton{
+    border-radius: 12px;
+    opacity: .7;
+    background-color: rgba(23, 22, 41) !important;
+}
+
+#emailInput{
+    color: white;
+    opacity: .7;
+    background-color: rgba(23, 22, 41) !important;
+}
+
+.bg-dark {
+    --bs-bg-opacity: .8;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.modal-header {
+    background-color: rgba(23, 22, 41) !important;
+    --bs-bg-opacity: .8;
+}
+
+.modal-body{
+    background-color: rgba(23, 22, 41) !important;
+    --bs-bg-opacity: .8;
+}
+#modaal{
+    background-color: rgba(23, 22, 41) !important;
+    --bs-bg-opacity: .8;
+}
+
+.modal-footer{
+    background-color: rgba(23, 22, 41) !important;
+    --bs-bg-opacity: .8;
+}
+
+.hover-effect-card {
+    position: relative;
+    overflow: hidden;  /* to ensure the content doesn't spill outside of the card */
+}
+
+.hover-effect-card img {
+    width: 100%;
+    transition: transform 0.3s ease;  /* smooth zoom effect */
+}
+
+.hover-effect-card .hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);  /* semi-transparent black */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;  /* hide it by default */
+    transition: opacity 0.3s ease;  /* smooth fade-in effect */
+}
+
+.hover-effect-card:hover img {
+    transform: scale(1.1);  /* zoom in the image */
+}
+
+.hover-effect-card:hover .hover-content {
+    opacity: 1;  /* display the content */
+}
+
+.minimum{
+    width:50%;
+    margin:50px 30%;
+    padding: 10px 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"], form input[type="number"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+@media screen and (max-width:860px) {
+    .form-control{
+        width:100%;
+        margin:50px 2%;
+        
+    }
+    .login{
+        margin: 20px 30%;
+        align-items: center;
+        text-align: center;
+    }
+    .login button{
+        font-size: 20px;
+        width: 135px;
+    }
+}
+.hidden-section {
+    display: none;
+}
+
